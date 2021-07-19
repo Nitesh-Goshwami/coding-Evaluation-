@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Online Jewellery Store
+        </title>
+        <style>
+            form {
+                margin-left: 500px;
+            }
+            img  {
+                width: 50%;
+                height: 150px;
+                
+            }
+            #data {
+                display: grid;
+                grid-template-columns: repeat(4, 20%);
+                grid-gap: 5%;
+                background-color:rgb(164, 164, 233);
+                padding-top: 10px;
+                padding-left: 10px;
+                border: 5px solid rgb(206, 154, 154);
+                margin: 10px;
+                
+            }
+            #btn1{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 630px;
+                margin-right: 40px;
+                width: 100px;
+            }
+            #btn2 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-right: 40px;
+                width: 100px;
+            }
+            div{
+                border: 5px solid rgb(206, 154, 154);
+                text-align: center;
+                background-color: white;
+                margin-left: 40px;
+                margin-bottom: 50px;
+                padding:10px;
+            }
+            #btn{
+                margin-left: 50%;
+            }
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body style = "background-color: thistle;">
+        <h1>Online Jewellery Store</h1>
+        <form id = "Eform">
+            
+            <input type= "text" id = "name" placeholder="Name">
+            <input type = "text" id = "price" placeholder="Price">
+            <input type = "text" id = "img" placeholder="Image">
+            
+        </form>
+
+        <button onclick="createNewProduct()" id = "btn1">Add Product</button>
+        <button onclick="cart()" id = "btn2">Cart</button>
+
+        <div id = "data"></div>
+    </body>
+</html>
+<script src = "product.js"></script>

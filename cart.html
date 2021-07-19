@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            cart
+        </title>
+        <style>
+           img  {
+                width: 50%;
+                height: 150px;
+                background-color: rgb(141, 159, 221);
+                
+            }
+            #data {
+                display: grid;
+                grid-template-columns: repeat(4, 20%);
+                grid-gap: 5%;
+                background-color:rgb(164, 164, 233);
+                padding-top: 10px;
+                padding-left: 10px;
+                border: 5px solid black;
+                margin: 10px;
+                
+            }
+            span {
+                float: right;
+            }
+        </style>
+    </head> 
+    <body style = "background-color: rgb(180, 245, 180);">
+        <span id = "count">Total Items</span>
+        <h1>Added to Cart</h1>
+        <div id = "data"></div>
+        
+    </body>
+</html> 
+<script src = "cart.js">
+
+</script>
